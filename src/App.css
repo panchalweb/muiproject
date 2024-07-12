@@ -1,0 +1,21 @@
+.css-1t6c9ts{
+ justify-content: center;
+}
+.buy{
+  border-radius:30px;
+  border: 1px solid black;
+  padding: 4px;
+  background-color: #294DEA;
+  color: #fff;
+  
+}
+body{
+  overflow-x: hidden;
+}
+.wpb_wrapper .ut-service-icon-small.ut-service-icon-with-svg svg {
+  max-width: 48px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  /* #ut-svg-6690a779974f9.ut-svg-loaded {
+    display: block;
+} */
