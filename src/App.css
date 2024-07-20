@@ -19,3 +19,7 @@ body{
   /* #ut-svg-6690a779974f9.ut-svg-loaded {
     display: block;
 } */
+ .sha{
+  box-shadow: 0px 0px 10px 5px;
+  color: grey;
+ }

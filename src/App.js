@@ -1,7 +1,8 @@
+
 import './App.css';
-import ResponsiveAppBar from './Components/Appbar';
-import Part1 from './Components/Part1';
-import Part2 from './Components/Part2';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
 
 
 
@@ -10,9 +11,13 @@ function App() {
   
   return (
     <>
-    <ResponsiveAppBar/>
-    <Part1/>
-    <Part2/>
+  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
     </>
   );
 }
