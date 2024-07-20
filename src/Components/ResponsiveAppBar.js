@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Prebuilt Websites', 'Headers', 'Heroes', 'Modues', 'Whats new'];
+const pages = ['Home', 'Prebuilt_Websites', 'Headers', 'Heroes', 'Modues', 'Whats_new'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -89,9 +90,10 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                (page=="Home"||page=="Modues"||page=="Whats_new")?
+                <Link to={page=="Home"?"/":page} key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                </Link>:  <Typography textAlign="center">{page}</Typography>
               ))}
             </Menu>
           </Box>

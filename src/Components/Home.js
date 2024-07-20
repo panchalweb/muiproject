@@ -12,14 +12,14 @@ import Part10 from './Part10'
 import Part11 from './Part11'
 import Part12 from './Part12'
 import Part4 from './Part4'
-
+import ResponsiveAppBar from './ResponsiveAppBar'
 
 
 
 function Home() {
   return (
  <>
- 
+ <ResponsiveAppBar/>
     <Part1/>
     <Part2mai />
     <Part2/>
